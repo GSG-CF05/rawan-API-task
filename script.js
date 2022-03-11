@@ -28,6 +28,10 @@ logo.classList.add("logo");
 // make fetch for freelancer API
 input.addEventListener("keyup", (e) => {
   if (e.key === "Enter") {
+    let result = document.createElement("p");
+    result.innerHTML = `The Search Result of: <span>${input.value}</span> `;
+    result.classList.add("result");
+    body.append(result);
     fetch(
       `https://www.freelancer.com/api/projects/0.1/jobs/search/?job_names%5B%5D=${input.value}&job_names%5B%5D=website%20design`
     )
