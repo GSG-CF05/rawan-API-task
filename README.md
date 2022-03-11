@@ -18,7 +18,8 @@
 </ul>
 
 ## Final Result
+<img src='images/js-result.png' alt='show result'>
 <img src='images/css-result.png' alt='show result'>
 <img src='images/php-result.png' alt='show result'>
-<img src='images/js-result.png' alt='show result'>
+
 
