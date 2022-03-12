@@ -61,14 +61,15 @@ input::placeholder {
 .result {
   position: absolute;
   color: var(--text-color);
-  font-size: 20px;
-  left: 25%;
-  top: 44%;
-  margin: 10px 20px 50px 20px;
+  font-size: 28px;
+  left: 30%;
+  top: 40%;
+  margin-bottom: 30px;
   font-weight: bold;
+  padding: 20px;
 }
 .result span {
-  font-size: 22px;
+  font-size: 30px;
   color: var(--heading-color);
 }
 
@@ -84,6 +85,7 @@ input::placeholder {
   transition: all 0.2s linear;
   padding: 50px;
   margin-bottom: 40px;
+  margin-top: 50px
 }
 
 .card h1 {
@@ -104,6 +106,10 @@ input::placeholder {
     align-items: center;
     flex: 1 1 calc(30% - 2rem);
   }
+  .result{
+    left: 45%;
+    margin-bottom: 30px;
+  }
 }
 
 /* start responsive section  */
@@ -118,10 +124,22 @@ input::placeholder {
   .card p {
     font-size: 18px;
   }
+  .result{
+    left: 35%;
+    top: 50%;
+    margin-bottom: 30px;
+    margin-top: 30px ;
+  }
 }
 @media (max-width: 450px) {
   .card {
     flex-basis: calc(100% - 2rem);
     margin-left: 5px;
+  }
+  .result{
+    left: 30%;
+    top: 50%;
+    margin-bottom: 30px;
+    margin-top: 30px ;
   }
 }
